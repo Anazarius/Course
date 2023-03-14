@@ -1,0 +1,157 @@
+*{
+    margin: 0 55px;
+    scroll-behavior: smooth;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+.body1{
+    background-color: #a0b3b0;
+}
+.add-card {
+    height: 400px;
+    margin: 200px 110px 0 110px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 110px);
+    background-color: #a786e7;
+    align-content: center;
+}
+.card_img{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.profile_img{
+    margin: 0;
+    padding: 0;
+    width: 47%;
+    pointer-events: none;
+}
+.card_saleman{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    color: #494949;
+}
+.card_title{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    height: 80%;
+    font-size: 40px;
+}
+.card_description{
+    grid-column: 2 / 3;
+    grid-row: 3 / 3;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    color: #494949;
+    resize: none;
+}
+
+.card_price{
+    grid-column: 3 / 3;
+    grid-row: 2 / 3;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    color: #494949;
+}
+
+.card_game{
+    grid-column: 1 / 2;
+    grid-row: 3 / 3;
+    height: 45%;
+    width: 55%;
+    align-self: start;
+}
+
+.card_game_category{
+    grid-column: 1 / 2;
+    grid-row: 3 / 3;
+    height: 45%;
+    width: 55%;
+    align-self: end;
+}
+.add_btn{
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+    align-self: end;
+    justify-self: end;
+}
+.btn{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #9b9191;
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+}
+.btn:hover, .button:focus {
+    background: #d94040;
+    transition: 1s;
+}
+
+
+
+/*FOOTER*/
+
+
+.footer{
+    background:#000;
+    padding:30px 0;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    position: fixed;
+    bottom: 0;
+    width: 1700px;
+}
+
+.footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+}
+
+.footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+}
+
+.footer .row a:hover{
+    color:#fff;
+}
+
+.footer .row ul{
+    width:100%;
+}
+
+.footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+}
+
+.footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+}
+
+@media (max-width:720px){
+    .footer{
+        text-align:left;
+        padding:5%;
+    }
+    .footer .row ul li{
+        display:block;
+        margin:10px 0px;
+        text-align:left;
+    }
+    .footer .row a i{
+        margin:0% 3%;
+    }
+}
